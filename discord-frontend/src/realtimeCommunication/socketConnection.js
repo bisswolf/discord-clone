@@ -14,7 +14,7 @@ let socket = null;
 export const connectWithSocketServer = (userDetails) => {
   const jwtToken = userDetails.token;
 
-  socket = io("http://localhost:5000", {
+  socket = io("https://discord-clone-server-fxux.onrender.com/", {
     auth: {
       token: jwtToken,
     },
