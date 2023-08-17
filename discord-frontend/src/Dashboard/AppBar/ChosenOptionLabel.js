@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 const ChosenOptionLabel = ({ name }) => {
   return (
     <Typography
-      sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}
+      sx={{ fontSize: "16px", color: "white", fontWeight: "bold",paddingLeft: "1em", }}
     >{`${name ? `Chosen conversation: ${name}` : ""}`}</Typography>
   );
 };
