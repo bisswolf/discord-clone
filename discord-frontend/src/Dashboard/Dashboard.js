@@ -33,8 +33,17 @@ const Dashboard = ({ setUserDetails, isUserInRoom }) => {
     <Wrapper>
       <SideBar />
       <FriendsSideBar />
-      <Messenger />
-      <AppBar />
+      <div
+        style={{
+          flexDirection: "column-reverse",
+          display: "flex",
+          width: "inherit",
+          overflow: "auto",
+        }}
+      >
+        <Messenger />
+        <AppBar />
+      </div>
       {isUserInRoom && <Room />}
     </Wrapper>
   );
